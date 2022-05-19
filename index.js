@@ -3,17 +3,18 @@ let password2 = document.getElementById("pass2")
 let password3 = document.getElementById("pass3")
 let password4 = document.getElementById("pass4")
 
-charLargeArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+let charLargeArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
-charSmallArray = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+let charSmallArray = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
-numArray = ["1","2","3","4","5","6","7","8","9","0"]
+let numArray = ["1","2","3","4","5","6","7","8","9","0"]
 
-specialCharArray = ["!","@","#","$","%","^","&","*","(",")"]
+let specialCharArray = ["!","@","#","$","%","^","&","*","(",")"]
 
-allArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","!","@","#","$","%","^","&","*","(",")"]
+let allArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","!","@","#","$","%","^","&","*","(",")"]
 
 
+// function will generate random passwords by collecting characters from the above defined arrays.
 
 function clickbtn() {
     let charLarge = Math.floor(Math.random()*26);
